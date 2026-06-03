@@ -188,6 +188,22 @@ head repository: nguyen-van-a/devlinux  ←  compare: embedded-linux/K26.1/nguye
 
 ---
 
+## Các trường hợp PR bị từ chối tự động
+
+Hệ thống sẽ **tự động close PR và báo lý do** nếu vi phạm một trong các điều sau:
+
+| Lý do bị reject | Cách khắc phục |
+|---|---|
+| Branch sai format (thiếu phần, sai tên môn, sai khoá, sai session) | Tạo lại branch đúng format `tên-môn/KXX.X/tên-của-bạn/session-XX` |
+| Tên học viên trong branch không khớp thư mục giáo viên đã tạo | Dùng đúng tên thư mục — hỏi giáo viên nếu không biết |
+| Tài khoản GitHub không khớp danh sách lớp | Đảm bảo đang dùng đúng tài khoản GitHub đã đăng ký với giáo viên |
+| Nộp thiếu bài tập so với đề bài | Hoàn thành đủ tất cả Exercise trong `homework.md` rồi push lại, sau đó reopen PR |
+| Nộp từ branch `master` | Tạo branch mới đúng format, không làm bài trực tiếp trên master |
+
+> ⚠️ Sau khi bị reject: **không mở PR mới** — push thêm code lên branch cũ rồi **reopen PR cũ** là đủ (trừ trường hợp sai tên branch thì phải tạo branch mới).
+
+---
+
 ## Khi cần sửa bài sau khi review
 
 ```bash
